@@ -1,4 +1,6 @@
+import { getBasePath } from '@/lib/path';
 import Image from "next/image"
+
 import { Download, Mail, Github, Linkedin, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -33,9 +35,9 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <Button asChild variant="outline" size="sm" className="hidden md:flex">
-              <a href="/resume.pdf" download>
-                <Download className="mr-2 h-4 w-4" /> Resume
-              </a>
+            <a href={`${getBasePath()}/resume.pdf`} download>
+              <Download className="mr-2 h-4 w-4" /> Download Resume
+            </a>
             </Button>
             <Button asChild size="sm" className="hidden md:flex">
               <a href="#contact">Contact Me</a>
@@ -88,7 +90,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full overflow-hidden border-4 border-primary">
-            <Image src="/profile.jpg" alt="Mohammed Masood Ahmed" fill className="object-cover" priority />
+          <Image src={`${getBasePath()}/profile.jpg`} alt="Mohammed Masood Ahmed" fill className="object-cover" priority />
           </div>
         </section>
 
