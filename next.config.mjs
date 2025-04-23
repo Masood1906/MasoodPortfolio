@@ -4,9 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Use your actual repository name
-  basePath: '/https://github.com/Masood1906/MasoodPortfolio.git',
-  assetPrefix: '/https://github.com/Masood1906/MasoodPortfolio.git',
+  basePath: '/MasoodPortfolio',
+  assetPrefix: '/MasoodPortfolio',
 };
 
 export default nextConfig;

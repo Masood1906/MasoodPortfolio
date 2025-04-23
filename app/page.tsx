@@ -1,4 +1,5 @@
 import { getBasePath } from '@/lib/path';
+
 import Image from "next/image"
 
 import { Download, Mail, Github, Linkedin, ExternalLink } from "lucide-react"
