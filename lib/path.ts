@@ -1,4 +1,4 @@
-// lib/path.ts
-export function getBasePath() {
-  return process.env.NODE_ENV === 'production' ? 'https://github.com/Masood1906/MasoodPortfolio.git' : '';
+export function getBasePath(): string {
+  // For static exports, we should always use the basePath
+  return "/MasoodPortfolio"
 }
